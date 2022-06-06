@@ -39,15 +39,15 @@ const Documentation = () => {
           </h1>
           <p className={classes.aboutText}>
             <Trans>
-              Nouns are an experimental attempt to improve the formation of on-chain avatar
+              FOODNOUNS are an experimental attempt to improve the formation of on-chain avatar
               communities. While projects such as {cryptopunksLink} have attempted to bootstrap
-              digital community and identity, Nouns attempt to bootstrap identity, community,
+              digital community and identity, FOODNOUNS attempt to bootstrap identity, community,
               governance, and a treasury that can be used by the community.
             </Trans>
           </p>
           <p className={classes.aboutText} style={{ paddingBottom: '4rem' }}>
             <Trans>
-              Learn more below, or start creating Nouns off-chain using the {playgroundLink}.
+              Learn more below, or start creating FOODNOUNS off-chain using the {playgroundLink}.
             </Trans>
           </p>
         </div>
@@ -59,25 +59,25 @@ const Documentation = () => {
             <Accordion.Body>
               <ul>
                 <li>
-                  <Trans>Nouns artwork is in the {publicDomainLink}.</Trans>
+                  <Trans>FOODNOUNS artwork is in the {publicDomainLink}.</Trans>
                 </li>
                 <li>
-                  <Trans>One Noun is trustlessly auctioned every 24 hours, forever.</Trans>
+                  <Trans>One FOODNOUN is trustlessly auctioned every 24 hours, forever.</Trans>
                 </li>
                 <li>
-                  <Trans>100% of Noun auction proceeds are trustlessly sent to the treasury.</Trans>
+                  <Trans>100% of FOODNOUNS auction proceeds are trustlessly sent to the treasury.</Trans>
                 </li>
                 <li>
                   <Trans>Settlement of one auction kicks off the next.</Trans>
                 </li>
                 <li>
-                  <Trans>All Nouns are members of Nouns DAO.</Trans>
+                  <Trans>All FOODNOUNS are members of FOODNOUNS DAO.</Trans>
                 </li>
                 <li>
-                  <Trans>Nouns DAO uses a fork of {compoundGovLink}.</Trans>
+                  <Trans>FOODNOUNS DAO uses a fork of {compoundGovLink}.</Trans>
                 </li>
                 <li>
-                  <Trans>One Noun is equal to one vote.</Trans>
+                  <Trans>One FOODNOUN is equal to one vote.</Trans>
                 </li>
                 <li>
                   <Trans>The treasury is controlled exclusively by Nouns via governance.</Trans>
@@ -92,7 +92,7 @@ const Documentation = () => {
                 </li>
                 <li>
                   <Trans>
-                    Nounders receive rewards in the form of Nouns (10% of supply for first 5 years).
+                    FOODNOUNDERS receive rewards in the form of FOODNOUNS (10% of supply for first 5 years).
                   </Trans>
                 </li>
               </ul>
@@ -106,7 +106,7 @@ const Documentation = () => {
             <Accordion.Body>
               <p className={classes.aboutText}>
                 <Trans>
-                  The Nouns Auction Contract will act as a self-sufficient Noun generation and
+                  The FOODNOUNS Auction Contract will act as a self-sufficient FOODNOUN generation and
                   distribution mechanism, auctioning one Noun every 24 hours, forever. 100% of
                   auction proceeds (ETH) are automatically deposited in the Nouns DAO treasury,
                   where they are governed by Noun owners.
@@ -134,12 +134,12 @@ const Documentation = () => {
             </Accordion.Header>
             <Accordion.Body>
               <Trans>
-                Nouns DAO utilizes a fork of {compoundGovLink} and is the main governing body of the
-                Nouns ecosystem. The Nouns DAO treasury receives 100% of ETH proceeds from daily
-                Noun auctions. Each Noun is an irrevocable member of Nouns DAO and entitled to one
-                vote in all governance matters. Noun votes are non-transferable (if you sell your
-                Noun the vote goes with it) but delegatable, which means you can assign your vote to
-                someone else as long as you own your Noun.
+                FOODNOUNS DAO utilizes a fork of {compoundGovLink} and is the main governing body of the
+                FOODNOUNS ecosystem. The FOODNOUNS DAO treasury receives 100% of ETH proceeds from daily
+                FOODNOUN auctions. Each FOODNOUN is an irrevocable member of FOODNOUNS DAO and entitled to one
+                vote in all governance matters. FOODNOUN votes are non-transferable (if you sell your
+                FOODNOUN the vote goes with it) but delegatable, which means you can assign your vote to
+                someone else as long as you own your FOODNOUN.
               </Trans>
             </Accordion.Body>
           </Accordion.Item>
@@ -150,17 +150,17 @@ const Documentation = () => {
             <Accordion.Body>
               <p>
                 <Trans>
-                  In addition to the precautions taken by Compound Governance, Nounders have given
+                  In addition to the precautions taken by Compound Governance, FOODNOUNDERS have given
                   themselves a special veto right to ensure that no malicious proposals can be
-                  passed while the Noun supply is low. This veto right will only be used if an
+                  passed while the FOODNOUN supply is low. This veto right will only be used if an
                   obviously harmful governance proposal has been passed, and is intended as a last
                   resort.
                 </Trans>
               </p>
               <p>
                 <Trans>
-                  Nounders will proveably revoke this veto right when they deem it safe to do so.
-                  This decision will be based on a healthy Noun distribution and a community that is
+                  FOODNOUNDERS will proveably revoke this veto right when they deem it safe to do so.
+                  This decision will be based on a healthy FOODNOUN distribution and a community that is
                   engaged in the governance process.
                 </Trans>
               </p>
@@ -168,14 +168,14 @@ const Documentation = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="4" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
-              <Trans>Noun Traits</Trans>
+              <Trans>FOODNOUN Traits</Trans>
             </Accordion.Header>
             <Accordion.Body>
               <p>
                 <Trans>
-                  Nouns are generated randomly based Ethereum block hashes. There are no 'if'
-                  statements or other rules governing Noun trait scarcity, which makes all Nouns
-                  equally rare. As of this writing, Nouns are made up of:
+                  FOODNOUNS are generated randomly based Ethereum block hashes. There are no 'if'
+                  statements or other rules governing Noun trait scarcity, which makes all FOODNOUNS
+                  equally rare. As of this writing, FOODNOUNS are made up of:
                 </Trans>
               </p>
               <ul>
@@ -196,7 +196,7 @@ const Documentation = () => {
                 </li>
               </ul>
               <Trans>
-                You can experiment with off-chain Noun generation at the {playgroundLink}.
+                You can experiment with off-chain FOODNOUN generation at the {playgroundLink}.
               </Trans>
             </Accordion.Body>
           </Accordion.Item>
@@ -207,8 +207,8 @@ const Documentation = () => {
             <Accordion.Body>
               <p>
                 <Trans>
-                  Nouns are stored directly on Ethereum and do not utilize pointers to other
-                  networks such as IPFS. This is possible because Noun parts are compressed and
+                  FOODNOUNS are stored directly on Ethereum and do not utilize pointers to other
+                  networks such as IPFS. This is possible because FOODNOUNS parts are compressed and
                   stored on-chain using a custom run-length encoding (RLE), which is a form of
                   lossless compression.
                 </Trans>
@@ -232,7 +232,7 @@ const Documentation = () => {
             <Accordion.Body>
               <p>
                 <Trans>
-                  The Noun Seeder contract is used to determine Noun traits during the minting
+                  The Noun Seeder contract is used to determine FOODNOUN traits during the minting
                   process. The seeder contract can be replaced to allow for future trait generation
                   algorithm upgrades. Additionally, it can be locked by the Nouns DAO to prevent any
                   future updates. Currently, Noun traits are determined using pseudo-random number
@@ -244,7 +244,7 @@ const Documentation = () => {
               <br />
               <p>
                 <Trans>
-                  Trait generation is not truly random. Traits can be predicted when minting a Noun
+                  Trait generation is not truly random. Traits can be predicted when minting a FOODNOUN
                   on the pending block.
                 </Trans>
               </p>
@@ -252,13 +252,13 @@ const Documentation = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="7" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
-              <Trans>Nounder's Reward</Trans>
+              <Trans>FOODNOUNDER's Reward</Trans>
             </Accordion.Header>
             <Accordion.Body>
               <p>
                 <Trans>
-                  'Nounders' are the group of ten builders that initiated Nouns. Here are the
-                  Nounders:
+                  'FOODNOUNDERS' are the group of ten builders that initiated FOODNOUNS. Here are the
+                  FOODNOUNDERS:
                 </Trans>
               </p>
               <ul>
