@@ -130,7 +130,7 @@ const Documentation = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="2" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
-              <Trans>Nouns DAO</Trans>
+              <Trans>FOODNOUNS DAO</Trans>
             </Accordion.Header>
             <Accordion.Body>
               <Trans>
