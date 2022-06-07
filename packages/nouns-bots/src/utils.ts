@@ -36,8 +36,8 @@ export async function resolveEnsOrFormatAddress(address: string) {
 export function formatAuctionStartedTweetText(auctionId: number) {
   return `＊Bleep Bloop Blop＊
         
- An auction has started for Noun #${auctionId}
- Learn more at https://nouns.wtf`;
+ An auction has started for FOODNOUN #${auctionId}
+ Learn more at https://foodnouns.wtf`;
 }
 
 /**
@@ -56,7 +56,7 @@ export async function formatBidMessageText(id: number, bid: Bid) {
  * @returns The auction ending soon text
  */
 export function getAuctionEndingSoonTweetText() {
-  return `This auction is ending soon! Bid now at https://nouns.wtf`;
+  return `This auction is ending soon! Bid now at https://foodnouns.wtf`;
 }
 
 export function formatNewGovernanceProposalText(proposal: Proposal) {
