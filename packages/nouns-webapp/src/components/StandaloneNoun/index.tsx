@@ -26,6 +26,7 @@ const getNoun = (nounId: string | EthersBN, seed: INounSeed) => {
   const id = nounId.toString();
   const name = `Noun ${id}`;
   const description = `Noun ${id} is a member of the Nouns DAO`;
+  console.log ('seed',seed);
   const { parts, background } = getNounData(seed);
   const image = `data:image/svg+xml;base64,${btoa(buildSVG(parts, data.palette, background))}`;
 
