@@ -131,6 +131,7 @@ const AuctionActivity: React.FC<AuctionActivityProps> = (props: AuctionActivityP
           </Row>
         </div>
         {!auctionEnded && (
+          <>
           <Row className={classes.activityRow}>
             <Col lg={12}>
                 <Bid auction={auction} auctionEnded={auctionEnded} />
