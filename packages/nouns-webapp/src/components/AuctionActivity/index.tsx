@@ -17,7 +17,6 @@ import AuctionActivityDateHeadline from '../AuctionActivityDateHeadline';
 import BidHistoryBtn from '../BidHistoryBtn';
 import config from '../../config';
 import { buildEtherscanAddressLink } from '../../utils/etherscan';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import NounInfoCard from '../NounInfoCard';
 import { useAppSelector } from '../../hooks';
@@ -133,18 +132,7 @@ const AuctionActivity: React.FC<AuctionActivityProps> = (props: AuctionActivityP
         </div>
         {!auctionEnded && (
           <Row className={classes.activityRow}>
-            <Col lg={12} className={classes.fomoNounsLink}>
-              <FontAwesomeIcon icon={faInfoCircle} />
-              <a href={'https://fomonouns.wtf'} target={'_blank'} rel="noreferrer">
-                <Trans>Help mint the next Noun</Trans>
-              </a>
-            </Col>
-          </Row>
-        )}
-        {isLastAuction && (
-          <>
-            <Row className={classes.activityRow}>
-              <Col lg={12}>
+            <Col lg={12}>
                 <Bid auction={auction} auctionEnded={auctionEnded} />
               </Col>
             </Row>

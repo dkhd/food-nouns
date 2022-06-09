@@ -13,7 +13,7 @@ const Banner = () => {
           <h1>
             <Trans>ONE FOODNOUN,</Trans>
             <br />
-            <Trans>EVERY DAY,</Trans>
+            <Trans>EVERY BREAKFAST, LUNCH AND DINNER,</Trans>
             <br />
             <Trans>FOREVER.</Trans>
           </h1>
