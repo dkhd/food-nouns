@@ -14,7 +14,7 @@ const Documentation = () => {
     />
   );
   const playgroundLink = (
-    <Link text={<Trans>Playground</Trans>} url="/playground" leavesPage={false} />
+    <Link text={<Trans>Test Kitchen</Trans>} url="/playground" leavesPage={false} />
   );
   const publicDomainLink = (
     <Link
@@ -35,7 +35,7 @@ const Documentation = () => {
       <Col lg={{ span: 10, offset: 1 }}>
         <div className={classes.headerWrapper}>
           <h1>
-            <Trans>WTF?</Trans>
+            <Trans>A Tasty Fork!</Trans>
           </h1>
           <p className={classes.aboutText}>
             <Trans>
@@ -107,7 +107,7 @@ const Documentation = () => {
               <p className={classes.aboutText}>
                 <Trans>
                   The FOODNOUNS Auction Contract will act as a self-sufficient FOODNOUN generation and
-                  distribution mechanism, auctioning one Noun every 24 hours, forever. 100% of
+                  distribution mechanism, auctioning three FOODNOUNS every 24 hours, forever. 100% of
                   auction proceeds (ETH) are automatically deposited in the Nouns DAO treasury,
                   where they are governed by Noun owners.
                 </Trans>
@@ -116,7 +116,7 @@ const Documentation = () => {
               <p className={classes.aboutText}>
                 <Trans>
                   Each time an auction is settled, the settlement transaction will also cause a new
-                  Noun to be minted and a new 24 hour auction to begin.{' '}
+                  Noun to be minted and a new 8 hour auction to begin.{' '}
                 </Trans>
               </p>
               <p>
@@ -257,7 +257,7 @@ const Documentation = () => {
             <Accordion.Body>
               <p>
                 <Trans>
-                  'FOODNOUNDERS' are the group of ten builders that initiated FOODNOUNS. Here are the
+                  'FOODNOUNDERS' are a group of a few builders that initiated FOODNOUNS. Here are the
                   FOODNOUNDERS:
                 </Trans>
               </p>

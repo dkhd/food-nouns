@@ -266,11 +266,11 @@ const Playground: React.FC = () => {
               <Trans>Explore</Trans>
             </span>
             <h1>
-              <Trans>FOODNOUNS Playground</Trans>
+              <Trans>FOODNOUNS Test Kitchen</Trans>
             </h1>
             <p>
               <Trans>
-                The playground was built using the {nounsProtocolLink}. FOODNOUNS traits are determined
+                The Test Kitchen was built using the {nounsProtocolLink}. FOODNOUNS traits are determined
                 by the Noun Seed. The seed was generated using {nounsAssetsLink} and rendered using
                 the {nounsSDKLink}.
               </Trans>

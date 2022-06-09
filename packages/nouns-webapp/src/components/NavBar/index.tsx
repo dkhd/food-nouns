@@ -103,7 +103,7 @@ const NavBar = () => {
               onClick={closeNav}
             >
               <NavBarButton
-                buttonText={<Trans>Docs</Trans>}
+                buttonText={<Trans>⌐◨-◨</Trans>}
                 buttonIcon={<FontAwesomeIcon icon={faBookOpen} />}
                 buttonStyle={nonWalletButtonStyle}
               />
@@ -116,7 +116,7 @@ const NavBar = () => {
               onClick={closeNav}
             >
               <NavBarButton
-                buttonText={<Trans>Discourse</Trans>}
+                buttonText={<Trans>Chef Notebook</Trans>}
                 buttonIcon={<FontAwesomeIcon icon={faComments} />}
                 buttonStyle={nonWalletButtonStyle}
               />
@@ -128,7 +128,7 @@ const NavBar = () => {
               onClick={closeNav}
             >
               <NavBarButton
-                buttonText={<Trans>Playground</Trans>}
+                buttonText={<Trans>Test Kitchen</Trans>}
                 buttonIcon={<FontAwesomeIcon icon={faPlay} />}
                 buttonStyle={nonWalletButtonStyle}
               />
