@@ -104,7 +104,6 @@ const NavBar = () => {
             >
               <NavBarButton
                 buttonText={<Trans>⌐◨-◨</Trans>}
-                buttonIcon={<FontAwesomeIcon icon={faBookOpen} />}
                 buttonStyle={nonWalletButtonStyle}
               />
             </Nav.Link>
