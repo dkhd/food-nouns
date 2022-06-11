@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
 import NavBarTreasury from '../NavBarTreasury';
 import NavWallet from '../NavWallet';
 import { Trans } from '@lingui/macro';
@@ -88,14 +88,7 @@ const NavBar = () => {
             onClick={() => setIsNavExpanded(!isNavExpanded)}
           />
           <Navbar.Collapse className="justify-content-end">
-            <Nav.Link as={Link} to="/vote" className={classes.nounsNavLink} onClick={closeNav}>
-              <NavBarButton
-                buttonText={<Trans>FOODNOUNS DAO</Trans>}
-                buttonIcon={<FontAwesomeIcon icon={faUsers} />}
-                buttonStyle={nonWalletButtonStyle}
-              />
-            </Nav.Link>
-            <Nav.Link
+          <Nav.Link
               href={externalURL(ExternalURL.notion)}
               className={classes.nounsNavLink}
               target="_blank"
@@ -104,6 +97,14 @@ const NavBar = () => {
             >
               <NavBarButton
                 buttonText={<Trans>⌐◨-◨</Trans>}
+                buttonStyle={nonWalletButtonStyle}
+              />
+            </Nav.Link>
+            <Nav.Link as={Link} to="/vote" className={classes.nounsNavLink} onClick={closeNav}>
+              
+              <NavBarButton
+                buttonText={<Trans>FOODNOUNS DAO</Trans>}
+                buttonIcon={<FontAwesomeIcon icon={faUsers} />}
                 buttonStyle={nonWalletButtonStyle}
               />
             </Nav.Link>
@@ -116,7 +117,7 @@ const NavBar = () => {
             >
               <NavBarButton
                 buttonText={<Trans>Chef Notebook</Trans>}
-                buttonIcon={<FontAwesomeIcon icon={faComments} />}
+                buttonIcon={<FontAwesomeIcon icon={faBookOpen} />}
                 buttonStyle={nonWalletButtonStyle}
               />
             </Nav.Link>
@@ -128,7 +129,7 @@ const NavBar = () => {
             >
               <NavBarButton
                 buttonText={<Trans>Test Kitchen</Trans>}
-                buttonIcon={<FontAwesomeIcon icon={faPlay} />}
+                buttonIcon={<FontAwesomeIcon icon={faCookieBite} />}
                 buttonStyle={nonWalletButtonStyle}
               />
             </Nav.Link>
