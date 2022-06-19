@@ -2,28 +2,20 @@ import React from 'react';
 import classes from './NoundersPage.module.css';
 import Section from '../../layout/Section';
 import { Col, Row, Card } from 'react-bootstrap';
-import pfp4156 from '../../assets/nounder-pfps/4156.png';
-import pfp9999 from '../../assets/nounder-pfps/9999.png';
-import pfpCryptoseneca from '../../assets/nounder-pfps/cryptoseneca.png';
-import pfpDevcarrot from '../../assets/nounder-pfps/devcarrot.png';
-import pfpDom from '../../assets/nounder-pfps/dom.png';
-import pfpKai from '../../assets/nounder-pfps/kai.png';
-import pfpSolimander from '../../assets/nounder-pfps/solimander.png';
-import pfpGremplin from '../../assets/nounder-pfps/gremplin.png';
-import pfpTimpers from '../../assets/nounder-pfps/timpers.png';
-import pfpVapeape from '../../assets/nounder-pfps/vapeape.png';
+import pfpgrant from '../../assets/nounder-pfps/grant.png';
+import pfpryan from '../../assets/nounder-pfps/ryan.png';
 import { Trans } from '@lingui/macro';
 
 const bios = [
   {
     name: 'Grant',
-    image: pfp4156,
+    image: pfpgrant,
     description: undefined,
     handle: 'cheffo_nft',
   },
   {
     name: 'Ryan',
-    image: pfpCryptoseneca,
+    image: pfpryan,
     description: undefined,
     handle: 'artismyweapon_',
   },
