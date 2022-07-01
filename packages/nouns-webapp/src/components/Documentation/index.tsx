@@ -129,13 +129,13 @@ const Documentation = () => {
                   <Trans>50% of FOODNOUNS auction proceeds are trustlessly sent to the treasury.</Trans>
                 </li>
                 <li>
-                  <Trans>25% of FOODNOUNS auction proceeds are trustlessly sent to the FOODNOUNDERS.</Trans>
+                  <Trans>25% of FOODNOUNS auction proceeds are trustlessly sent to the {nounsLink}.</Trans>
                 </li>
                 <li>
-                  <Trans>12.5% of FOODNOUNS auction proceeds are trustlessly sent to the {nounsLink}.</Trans>
+                  <Trans>13% of FOODNOUNS auction proceeds are trustlessly sent to the Kithen Nouncil.</Trans>
                 </li>
                 <li>
-                  <Trans>12.5% of FOODNOUNS auction proceeds are trustlessly sent to the Kitchen Counsel.</Trans>
+                  <Trans>12% of FOODNOUNS auction proceeds are trustlessly sent to the FOODNOUNDERS.</Trans>
                 </li>
                 <li>
                   <Trans>Settlement of one auction kicks off the next.</Trans>
@@ -157,7 +157,7 @@ const Documentation = () => {
                 </li>
                 <li>
                   <Trans>
-                    No explicit rules exist for attribute scarcity; all Nouns are equally rare.
+                    No explicit rules exist for attribute scarcity; all FOODNOUNS are equally rare.
                   </Trans>
                 </li>
                 <li>
@@ -179,15 +179,15 @@ const Documentation = () => {
                   The FOODNOUNS Auction Contract will act as a self-sufficient FOODNOUN generation and
                   distribution mechanism, auctioning one FOODNOUNS every 8 hours, forever. Auction proceeds
                   (ETH) are automatically deposited in the following ways: 50% to FOODNOUNS DAO Treasury 
-                  which is governed by FOODNOUN owners, 25% to the FOODNOUNDERS Treasury, 12.5% to the
-                  NounsDAO Treasury and the final 12.5% to the Kitchen Council.
+                  which is governed by FOODNOUN owners, 25% to the NounsDAO Treasury, 13% to the
+                  Kitchen Nouncil and the final 12% to the FOODNOUNDERS.
                 </Trans>
               </p>
 
               <p className={classes.aboutText}>
                 <Trans>
                   Each time an auction is settled, the settlement transaction will also cause a new
-                  Noun to be minted and a new 8 hour auction to begin.{' '}
+                  FOODNOUN to be minted and a new 8 hour auction to begin.{' '}
                 </Trans>
               </p>
               <p>
@@ -321,7 +321,7 @@ const Documentation = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="7" className={classes.accordionItem}>
             <Accordion.Header className={classes.accordionHeader}>
-              <Trans>FOODNOUNDERS & Kitchen Council</Trans>
+              <Trans>FOODNOUNDERS & Kitchen Nouncil</Trans>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -347,8 +347,8 @@ const Documentation = () => {
               </p>
               <p>
                 <Trans>
-                  'The Kitchen Council' are food, technology and human enthusiasts that advice and assist FOODNOUNS. Here are the
-                  Kitchen Council Members:
+                  'The Kitchen Nouncil' are food, technology and human enthusiasts that advice and assist FOODNOUNS. Here are the
+                  Kitchen Nouncil Members:
                 </Trans>
               </p>
               <ul>
@@ -367,15 +367,8 @@ const Documentation = () => {
               </ul>
               <p>
                 <Trans>
-                  Every 11th FOODNOUN for the first 5 years of the project (Noun ids #1, #11, #22, #33 and so on)
-                  will be automatically sent to the Kitchen Council multisig to be vested and shared among the advisory
-                  members of the project.
-                </Trans>
-              </p>
-              <p>
-                <Trans>
-                  FOODNOUNDER and Kitchen Council distributions don't interfere with the cadence of 8 hour auctions. FOODNOUNS
-                  are sent directly to the Nounder's Multisig, and auctions continue on schedule
+                  FOODNOUNDER and Kitchen Nouncil distributions don't interfere with the cadence of 8 hour auctions. FOODNOUNS
+                  are sent directly to the FOODNOUDER's Multisig, and auctions continue on schedule
                   with the next available FOODNOUN ID.
                 </Trans>
               </p>
