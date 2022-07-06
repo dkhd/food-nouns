@@ -82,7 +82,11 @@ task('deploy', 'Deploys NFTDescriptor, NounsDescriptor, NounsSeeder, and NounsTo
   )
   .setAction(async (args, { ethers }) => {
     const network = await ethers.provider.getNetwork();
+    console.log('network = ', network);
+
     const [deployer] = await ethers.getSigners();
+
+    console.log('deployer = ', deployer);
 
     // prettier-ignore
     const proxyRegistryAddress = proxyRegistries[network.chainId] ?? proxyRegistries[ChainId.Rinkeby];
@@ -93,6 +97,8 @@ task('deploy', 'Deploys NFTDescriptor, NounsDescriptor, NounsSeeder, and NounsTo
       );
       args.noundersdao = deployer.address;
     }
+    console.log('deployer address = ', args.noundersdao);
+    
     if (!args.weth) {
       const deployedWETHContract = wethContracts[network.chainId];
       if (!deployedWETHContract) {

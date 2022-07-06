@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-/// @title The FOODNOUNS DAO auction house
+/// @title The Nouns DAO auction house
 
 /*********************************
  * ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ *
@@ -53,6 +53,13 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
 
     // The active auction
     INounsAuctionHouse.Auction public auction;
+
+    // The wallets
+    address private constant WALLET_BURN = 0xd131A948d773ADBC052A979ed079E50FD3563C9E;
+    address private constant WALLET_NOUNS_DAO = 0xd131A948d773ADBC052A979ed079E50FD3563C9E;
+    address private constant WALLET_FOODNOUNS_DAO = 0xd131A948d773ADBC052A979ed079E50FD3563C9E;
+    address private constant WALLET_KITCHEN_NOUNCIL = 0xd131A948d773ADBC052A979ed079E50FD3563C9E;
+    address private constant WALLET_FOODNOUNDERS = 0xd131A948d773ADBC052A979ed079E50FD3563C9E;
 
     /**
      * @notice Initialize the auction house and base contracts,
@@ -228,13 +235,23 @@ contract NounsAuctionHouse is INounsAuctionHouse, PausableUpgradeable, Reentranc
         auction.settled = true;
 
         if (_auction.bidder == address(0)) {
-            nouns.burn(_auction.nounId);
+            // Burn = transfer to Gnosis Safe
+            nouns.transferFrom(WALLET_BURN, _auction.bidder, _auction.nounId);
         } else {
             nouns.transferFrom(address(this), _auction.bidder, _auction.nounId);
         }
 
         if (_auction.amount > 0) {
-            _safeTransferETHWithFallback(owner(), _auction.amount);
+            // split bidding amount
+            uint256 walletNounsDAOBalance = (_auction.amount * 25) / 100;
+            uint256 walletFoodnounsDAOBalance = (_auction.amount * 50) / 100;
+            uint256 walletKitchenNouncilBalance = (_auction.amount * 12) / 100;
+            uint256 walletFoodnoundersBalance = (_auction.amount * 13) / 100;
+
+            _safeTransferETHWithFallback(WALLET_NOUNS_DAO, walletNounsDAOBalance);
+            _safeTransferETHWithFallback(WALLET_FOODNOUNS_DAO, walletFoodnounsDAOBalance);
+            _safeTransferETHWithFallback(WALLET_FOODNOUNDERS, walletFoodnoundersBalance);
+            _safeTransferETHWithFallback(WALLET_KITCHEN_NOUNCIL, walletKitchenNouncilBalance);
         }
 
         emit AuctionSettled(_auction.nounId, _auction.bidder, _auction.amount);
